@@ -11,7 +11,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck:watch": "vue-tsc --noEmit --watch"
+    "typecheck:watch": "vue-tsc --noEmit --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "nuxt": "^4.4.2",
@@ -19,10 +21,12 @@
     "vue-router": "^5.0.4"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^7.7.3",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/icon": "^2.2.1",
     "@types/node": "^25.5.0",
     "eslint": "^10.1.0",
+    "eslint-plugin-format": "^2.0.1",
     "sass": "^1.98.0",
     "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6"

@@ -3,7 +3,7 @@
 <template>
   <div class="app-wrapper">
     <AppHeader />
-    <main class="app-main">
+    <main class="app-main" role="main" aria-label="основной контент">
       <slot />
     </main>
     <AppFooter />

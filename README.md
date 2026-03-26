@@ -78,7 +78,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## Work in Git - Trunk-based Development - modern minimalism.
 
 ### 1. Main branches:
-- `main` -- **stable, deployment only**; 
+- `main` -- **stable, deployment only**;
 - `develop` -- **current development**;
 - `feature/*` -- **new features**;
 

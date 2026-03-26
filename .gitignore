@@ -12,6 +12,10 @@ node_modules
 # Logs
 logs
 *.log
+npm-debug.log*
+.eslintcache
+.env
+nuxt.d.ts
 
 # Misc
 .DS_Store
@@ -22,3 +26,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# IDE - VSCode
+.vercel

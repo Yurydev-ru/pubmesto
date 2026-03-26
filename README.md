@@ -73,3 +73,38 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+---
+## Work in Git - Trunk-based Development - modern minimalism.
+
+### 1. Main branches:
+- `main` -- **stable, deployment only**; 
+- `develop` -- **current development**;
+- `feature/*` -- **new features**;
+
+#### _Exemple_:
+```bash
+git checkout -b feature/cart-button
+# We're working on a feature
+git commit -m "Add cart button"
+git checkout main
+git merge feature/cart-button
+```
+---
+
+### 2. Working on the task
+
+- Create a branch from develop:
+`git checkout -b feature/name-features`
+
+---
+
+### 3. Rules commit
+- Commit by Conventional Commits.
+#### _Exemple_:
+```bash
+feat(cart): add cart button
+```
+- Make a Pull Request in develop.
+
+---

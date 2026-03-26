@@ -1,13 +1,13 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
-  <div>
-    <slot />
+  <div class="app-wrapper">
+    <AppHeader />
+    <main class="app-main">
+      <slot />
+    </main>
+    <AppFooter />
   </div>
 </template>
 
-<style>
-
-</style>
+<style lang="scss" scoped></style>

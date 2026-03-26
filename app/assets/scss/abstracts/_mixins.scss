@@ -1,0 +1,37 @@
+@use "./functions" as fn;
+
+@mixin media($from, $to: null) {
+  @if $to == null {
+    @media (min-width: fn.breakpoint($from)) {
+      @content;
+    }
+  } @else if $to == "max" {
+    @media (max-width: calc(#{fn.breakpoint($from)} - 0.02px)) {
+      @content;
+    }
+  } @else if type-of($to) == "string" {
+    @media (min-width: fn.breakpoint($from)) and 
+           (max-width: calc(#{fn.breakpoint($to)} - 0.02px)) {
+      @content;
+    }
+  } @else {
+    @error "❌ Неверный аргумент для media()";
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+// @mixin grid($min: 250px) {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax($min, 1fr));
+//   gap: var(--space-md);
+// }

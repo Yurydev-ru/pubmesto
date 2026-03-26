@@ -1,0 +1,10 @@
+@use "@/assets/scss/abstracts" as *;
+
+.app-footer {
+    width: 100%;
+    background-color: antiquewhite;
+
+    @include media('m') {
+        background-color: beige;
+    }
+}

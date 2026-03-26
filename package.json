@@ -2,12 +2,16 @@
   "name": "pubmesto",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">20.11"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "typecheck:watch": "vue-tsc --noEmit --watch"
   },
   "dependencies": {
     "nuxt": "^4.4.2",
@@ -20,7 +24,7 @@
     "@types/node": "^25.5.0",
     "eslint": "^10.1.0",
     "sass": "^1.98.0",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6"
   }
 }

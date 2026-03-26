@@ -1,6 +1,15 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
   "files": [],
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "bundler",
+    "noImplicitAny": true,
+    "paths": {
+      "@types": ["./app/types"]
+    },
+    "types": ["@types/node", "nuxt"]
+  },
   "references": [
     {
       "path": "./.nuxt/tsconfig.app.json"

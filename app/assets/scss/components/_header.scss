@@ -1,0 +1,9 @@
+@use '@/assets/scss/abstracts' as *;
+
+.app-header {
+  background-color: var(--color-bg-surface);
+
+  @include media('m') {
+    background-color: beige;
+  }
+}

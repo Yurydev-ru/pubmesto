@@ -1,19 +1,6 @@
-@use "../abstracts" as *;
-
-
+@use '../abstracts' as *;
 
 body {
-    background-color: var(--color-bg-primary);
-    color: var(--color-primary);
+  background-color: var(--color-bg-surface);
+  color: var(--color-primary);
 }
-
-
-
-.container {
-    width: 100%;
-    // padding-inline: var(--container-padding-mobile);
-    
-    // @include media(s);
-
-}
-

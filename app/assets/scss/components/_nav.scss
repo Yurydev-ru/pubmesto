@@ -1,0 +1,11 @@
+.app-nav {
+  background-color: rgb(16, 3, 130);
+  height: 100%;
+
+  &__list {
+    width: 100%;
+    height: stretch;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

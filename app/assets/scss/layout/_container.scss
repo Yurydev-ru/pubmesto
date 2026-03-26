@@ -1,0 +1,5 @@
+@use '@/assets/scss/abstracts' as *;
+
+.container {
+  @include grid-container(100%, 0.8rem);
+}

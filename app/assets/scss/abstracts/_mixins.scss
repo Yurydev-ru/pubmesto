@@ -1,15 +1,15 @@
-@use "./functions" as fn;
+@use './functions' as fn;
 
 @mixin media($from, $to: null) {
   @if $to == null {
     @media (min-width: fn.breakpoint($from)) {
       @content;
     }
-  } @else if $to == "max" {
+  } @else if $to == 'max' {
     @media (max-width: calc(#{fn.breakpoint($from)} - 0.02px)) {
       @content;
     }
-  } @else if type-of($to) == "string" {
+  } @else if type-of($to) == 'string' {
     @media (min-width: fn.breakpoint($from)) and 
            (max-width: calc(#{fn.breakpoint($to)} - 0.02px)) {
       @content;
@@ -25,10 +25,31 @@
   justify-content: center;
 }
 
-@mixin grid {
+@mixin grid-auto($min: 250px, $gap: 1rem) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
 }
+
+@mixin grid-container($max-width: 1200px, $padding: 16px) {
+  max-width: $max-width;
+  margin-inline: auto;
+  padding-inline: $padding;
+}
+
+@mixin masonry($columns: 3, $gap: 1rem) {
+  column-count: $columns;
+  column-gap: $gap;
+
+  > * {
+    break-inside: avoid;
+    margin-bottom: $gap;
+  }
+}
+// @mixin grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+// }
 
 // @mixin grid($min: 250px) {
 //   display: grid;

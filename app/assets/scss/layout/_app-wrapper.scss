@@ -1,6 +1,14 @@
+@use '@/assets/scss/abstracts' as *;
+
 .app-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  min-height: 100vh;
+
+  @include media('m') {
+    grid-template-rows: none;
+    grid-template-columns: 200px 1fr;
+    gap: 15;
+  }
 }

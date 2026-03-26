@@ -57,7 +57,6 @@ export default defineNuxtConfig({
           additionalData: ` 
           @use "@assets/scss/tokens" as *; 
           @use "@assets/scss/abstracts" as *;
-          
           `,
         },
       },

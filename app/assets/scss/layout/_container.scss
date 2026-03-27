@@ -1,5 +1,12 @@
 @use '@/assets/scss/abstracts' as *;
 
 .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+   padding-inline: 0.8rem;
+   margin-inline: auto;
+
   @include grid-container(100%, 0.8rem);
 }

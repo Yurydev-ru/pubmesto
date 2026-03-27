@@ -6,6 +6,15 @@
       <li class="app-nav__item">
         <NavItem />
       </li>
+      <li class="app-nav__item">
+        <NavItem />
+      </li>
+      <li class="app-nav__item">
+        <NavItem />
+      </li>
+      <li class="app-nav__item">
+        <NavItem />
+      </li>
     </ul>
   </nav>
 </template>

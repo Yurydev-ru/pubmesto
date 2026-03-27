@@ -3,6 +3,13 @@ import { fileURLToPath } from 'node:url'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
+  appConfig: {
+    icon: {
+      size: '1.5rem',
+      mode: 'css',
+    class: '',
+  },
+  },
   devServer: {
     host: '127.0.0.1',
     port: 3000,
@@ -36,6 +43,7 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+
   components: [
     {
       path: '@components/ui',
@@ -65,6 +73,7 @@ export default defineNuxtConfig({
       include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },
   },
+  
   typescript: {
     strict: true,
     typeCheck: true,

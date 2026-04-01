@@ -29,7 +29,7 @@ export const useNavigation = () => {
     },
     {
       to: '/contact',
-      name: 'streamline-freehand:mail-send-email',
+      name: 'streamline-freehand-paginate-filter-mail',
       label: 'Контакты',
       exact: true,
       ariaLabel: 'Наши контакты и обратная связь',

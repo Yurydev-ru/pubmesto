@@ -13,9 +13,5 @@ defineProps<{
 </template>
 
 <style lang="scss" scoped>
-    .link-wrapper {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
+   
 </style>

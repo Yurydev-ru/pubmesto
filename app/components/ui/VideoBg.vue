@@ -11,7 +11,7 @@
       preload="metadata"
       aria-hidden="true"
     >
-      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy" >
+      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy">
     </video>
   </div>
 </template>

@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     icon: {
       size: '1.5rem',
       mode: 'css',
-    class: '',
-  },
+      class: '',
+    },
   },
   devServer: {
     host: '127.0.0.1',
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
       include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },
   },
-  
+
   typescript: {
     strict: true,
     typeCheck: true,

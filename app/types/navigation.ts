@@ -1,11 +1,9 @@
-export interface NavItem {
+export interface NavLink {
   to: string
-  icon: string
+  name: string
   label: string
   ariaLabel?: string
   exact?: boolean | undefined
-  // active?: boolean
-  // class?: string
 }
 
-export type NavItems = NavItem[]
+export type NavLinks = NavLink[]

@@ -1,34 +1,26 @@
 <script lang="ts" setup>
+import type { NavItem } from "@/types/navigation";
+
+defineProps<{
+  link: NavItem
+}>()
 
 </script>
 
 <template>
-  <NuxtLink to="/" class="app-nav__link">
-    <Icon name="streamline-freehand-home-chimney-2" class="icon"/>
-    <span class="app-nav__lable">Home</span>
+  <NuxtLink :to="link.to" :aria-label="link.ariaLabel || link.label" class="app-nav__link">
+    <NavIcon :name="link.icon"/>
+    <span>{{ link.label }}</span>
   </NuxtLink>
-  <NuxtLink to="/" class="app-nav__link">
-    <Icon name="streamline-freehand-modern-payment-self-checkout-touch" class="icon"/>
-    <span class="app-nav__lable">Home</span>
-  </NuxtLink>
-  <NuxtLink to="/" class="app-nav__link">
-    <Icon name="streamline-freehand-home-chimney-2" class="icon"/>
-    <span class="app-nav__lable">Home</span>
-  </NuxtLink>
-  <NuxtLink to="/" class="app-nav__link">
-    <Icon name="streamline-freehand-home-chimney-2" class="icon"/>
-    <span class="app-nav__lable">Home</span>
-  </NuxtLink>
-
 </template>
 
 <style lang="scss" scoped>
 .app-nav__link {
   display: flex;
-}
+} 
 .icon {
   width: 1.5rem;
   height: 1.5rem;
-  fill: #ffffff;
+ 
 }
 </style>

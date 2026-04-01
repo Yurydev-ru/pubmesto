@@ -1,0 +1,16 @@
+:root {
+    --font-heading: "Playfair Display", serif;
+    --font-sans: "Manrope", sans-serif;
+
+    --fs-base: clamp(1rem, calc(0.97rem + 0.2vw), 1.25rem);
+    --fs-h1: clamp(1.5rem, 4vw, 3rem);
+    --fs-1: clamp(1rem, 2vw, 1.25rem);
+    --fs-2: clamp(0.875rem, 0.82rem + 0.15vw, 1rem);
+    --fs-h2: clamp(1.75rem, 1.3rem + 1.2vw, 2.5rem);
+    --lh-heading: 1.1;
+    --lh-label: 1.4;
+    --lh-body: 1.6;
+    // --ls-tight: -0.02em;
+    // --ls-normal: 0;
+    // --ls-wide: 0.04em;
+}

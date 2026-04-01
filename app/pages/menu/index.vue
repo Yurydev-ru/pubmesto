@@ -26,5 +26,5 @@ const { categories } = useMenu();
 </template>
 
 <style lang="scss" scoped>
-/* стили аналогичны предыдущей версии */
+
 </style>

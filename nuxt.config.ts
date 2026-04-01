@@ -37,13 +37,30 @@ export default defineNuxtConfig({
     '@/': fileURLToPath(new URL('./app', import.meta.url)),
   },
   css: ['@assets/scss/main.scss'],
-  modules: ['@nuxt/eslint', '@nuxt/icon'],
+  modules: ['@nuxt/fonts', '@nuxt/eslint', '@nuxt/icon'],
   eslint: {
     config: {
       stylistic: true,
     },
   },
-
+  fonts: {
+    families: [
+      {
+        name: 'Playfair Display',
+        provider: 'google',
+        weights: [600, 700],
+        preload: true,
+        styles: ['normal'],
+      },
+      {
+        name: 'Manrope',
+        provider: 'google',
+        styles: ['normal', 'italic'],
+        weights: [400, 500, 600],
+        preload: true,
+      },
+    ],
+  },
   components: [
     {
       path: '@components/ui',

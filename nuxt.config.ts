@@ -44,17 +44,16 @@ export default defineNuxtConfig({
     },
   },
   fonts: {
+    provider: 'google',
     families: [
       {
         name: 'Playfair Display',
-        provider: 'google',
         weights: [600, 700],
         preload: true,
         styles: ['normal'],
       },
       {
         name: 'Manrope',
-        provider: 'google',
         styles: ['normal', 'italic'],
         weights: [400, 500, 600],
         preload: true,

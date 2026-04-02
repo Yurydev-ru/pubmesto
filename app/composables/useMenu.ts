@@ -35,7 +35,7 @@ export function useMenu () {
         {
           slug: 'cold',
           title: 'Холодные роллы',
-          description: 'Классика с свежей рыбой и овощами',
+          description: 'Холодные роллы на любой вкус',
           products: [
             { id: 1, name: 'Филадельфия', price: 450, weight: '220г', description: 'Лосось, сливочный сыр, огурец', ingredients: ['Лосось', 'Сливочный сыр', 'Огурец'] },
             { id: 2, name: 'Калифорния', price: 390, weight: '210г', description: 'Крабовый мясо, авокадо, огурец' },

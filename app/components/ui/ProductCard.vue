@@ -27,6 +27,8 @@ defineProps<{
 
 <style lang="scss" scoped>
     .product-card {
+      width: 100%;
+      height: 100%;
   background: #1f2937;
   border-radius: 1rem;
   overflow: hidden;

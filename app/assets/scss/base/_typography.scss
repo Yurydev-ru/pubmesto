@@ -44,6 +44,13 @@ body {
      font-family: var(--font-sans);
   font-size: var(--fs-base);
   font-weight: var(--fw-regular);
+  line-height: var(--lh-body);
+}
+
+h1 {
+  font-weight: var(--fw-title);
+  line-height: var(--ls-tight);
+
 }
 
 h2 {

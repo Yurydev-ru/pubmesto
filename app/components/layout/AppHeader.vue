@@ -3,7 +3,10 @@
 <template>
   <header class="app-header">
     <div class="container">
-      <h1>vtcnj</h1>
+      <NuxtLink to="/" class="logo">
+        <span>кафе</span>
+        <h1>Место</h1>
+      </NuxtLink>
     </div>
   </header>
 </template>

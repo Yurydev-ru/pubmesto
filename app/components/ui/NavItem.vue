@@ -12,16 +12,22 @@ const { getActiveClass } = useNavigation()
 <template>
   <NuxtLink :to="link.to" :aria-label="link.ariaLabel" :class="getActiveClass(link)" class="app-nav__link">
     <NavIcon :name="link.name" />
-    <span>{{ link.label }}</span>
+    <span class="link-label">{{ link.label }}</span>
   </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
 .app-nav__link {
   display: flex;
+  gap: 3px;
 
   &--active {
-    color: rgb(233, 200, 13);
+    color: var(--color-active);
+    background: var(--bg-link-active);
+  }
+
+  &--hover {
+    color: var(--color-hover);
   }
 }
 </style>

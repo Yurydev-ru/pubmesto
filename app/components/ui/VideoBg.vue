@@ -2,21 +2,29 @@
 
 <template>
   <div class="bg-wrapper">
+    <NuxtImg class="bg-img" src="images/bg-m-3.jpg" sizes="sm:100vw" quality="30"/>
     <video
-      class="bg-video"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="metadata"
-      aria-hidden="true"
+    class="bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    aria-hidden="true"
     >
-      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy">
-    </video>
+    <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy">
+  </video>
+  <div class="bg-overlay"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.bg-overlay {
+  background: #1b1a1a09;
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+}
 .bg-wrapper {
   position: absolute;
   inset: 0;
@@ -36,5 +44,15 @@
   object-fit: cover;
   object-position: center;
   z-index: 1;
+  display: none;
+}
+
+.bg-img {
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  
 }
 </style>

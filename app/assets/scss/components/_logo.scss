@@ -1,0 +1,22 @@
+.logo {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.logo span {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 0.8;
+}
+
+.logo h1 {
+    font-weight: var(--vw-title);
+    font-family: var(--font-heading);
+    line-height: 1.1;
+    letter-spacing: -0.03rem;
+    font-size: 2.6rem;
+}

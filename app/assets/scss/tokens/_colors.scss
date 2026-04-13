@@ -3,8 +3,9 @@
   --color-bg-primary: rgb(19, 18, 18);
   // --color-bg-surface: rgb(26, 25, 27);
   --color-bg-surface: rgba(51, 53, 57, 0.100);
-  --color-text-primary: rgb(242, 234, 227);
-  --color-text-muted: rgb(208, 201, 195);
+  --color-hover: oklch(79.898% 0.10643 52.479 / 0.97);
+  --color-active: oklab(0.84 0.03 0.1 / 0.97);
+  --bg-link-active:oklab(0.14 0 0 / 0.81);
 
   --bg-hover: rgb(19, 18, 18);
   --bg-focus: rgb(25, 27, 27);
@@ -12,3 +13,59 @@
   --color-border-primary: rgb(51, 51, 48);
   --color-border-hover: rgb(78, 76, 71);
 }
+
+// /* Frame 1374 */
+
+// box-sizing: border-box;
+
+// position: relative;
+// width: 107px;
+// height: 134px;
+
+// /* link-active */
+// background: linear-gradient(180deg, rgba(230, 25, 14, 0.97) 0%, rgba(217, 86, 39, 0.97) 72.41%, rgba(33, 29, 34, 0.97) 107.5%), radial-gradient(134.73% 90% at 50% 50%, rgba(241, 113, 1, 0.48) 0%, rgba(20, 21, 19, 0.0624) 100%);
+// background-blend-mode: soft-light, plus-lighter;
+// mix-blend-mode: normal;
+// box-shadow: 10.5px -13.2px 48px rgba(0, 0, 0, 0.15), 1.75px -2.2px 12px rgba(0, 0, 0, 0.15), inset -2.02125px 2.541px 9.24px rgba(255, 255, 255, 0.126), inset -1.14625px 1.441px 4.62px rgba(255, 255, 255, 0.126);
+// backdrop-filter: blur(7.58px);
+// /* Note: backdrop-filter has minimal browser support */
+
+
+// /* Frame 1373 */
+
+// position: absolute;
+// width: 30px;
+// height: 30px;
+// left: 38px;
+// top: 49px;
+
+// background: #3A3333;
+
+
+// /* Share */
+
+// position: absolute;
+// width: 24px;
+// height: 24px;
+// left: calc(50% - 24px/2);
+// top: calc(50% - 24px/2);
+
+
+
+// /* Back */
+
+// box-sizing: border-box;
+
+// position: absolute;
+// left: 4.17%;
+// right: 4.17%;
+// top: 8.33%;
+// bottom: 8.33%;
+
+// /* link-active */
+// background: linear-gradient(180deg, rgba(230, 25, 14, 0.97) 0%, rgba(217, 86, 39, 0.97) 72.41%, rgba(33, 29, 34, 0.97) 107.5%), radial-gradient(134.73% 90% at 50% 50%, rgba(241, 113, 1, 0.48) 0%, rgba(20, 21, 19, 0.0624) 100%);
+// background-blend-mode: soft-light, plus-lighter;
+// mix-blend-mode: normal;
+// box-shadow: 10.5px -13.2px 48px rgba(0, 0, 0, 0.15), 1.75px -2.2px 12px rgba(0, 0, 0, 0.15), inset -2.02125px 2.541px 9.24px rgba(255, 255, 255, 0.126), inset -1.14625px 1.441px 4.62px rgba(255, 255, 255, 0.126);
+// backdrop-filter: blur(7.58px);
+// /* Note: backdrop-filter has minimal browser support */

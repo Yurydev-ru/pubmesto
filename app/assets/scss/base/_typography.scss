@@ -1,0 +1,52 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  src:
+       url('@assets/fonts/manrope-300.woff2') format('woff2')
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('@assets/fonts/manrope-400.woff2') format('woff2'),
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('@assets/fonts/manrope-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('@assets/fonts/playfair-display-600.woff2') format('woff2')
+
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('@assets/fonts/playfair-display-700.woff2') format('woff2'),
+}
+
+body {
+     font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+}

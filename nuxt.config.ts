@@ -4,6 +4,45 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   appConfig: {
+    head: {
+      link: [
+        {
+          rel: 'preload',
+          href: '/fonts/manrope-300.woff2',
+          as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          href: '/fonts/manrope-400.woff2',
+          as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          href: '/fonts/manrope-500.woff2',
+          as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          href: '/fonts/playfair-display-600.woff2',
+          as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          href: '/fonts/playfair-display-700.woff2',
+          as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+        },
+      ],
+    },
     icon: {
       size: '1.5rem',
       mode: 'css',
@@ -37,28 +76,11 @@ export default defineNuxtConfig({
     '@/': fileURLToPath(new URL('./app', import.meta.url)),
   },
   css: ['@assets/scss/main.scss'],
-  modules: ['@nuxt/fonts', '@nuxt/eslint', '@nuxt/icon'],
+  modules: [ '@nuxt/eslint', '@nuxt/icon'],
   eslint: {
     config: {
       stylistic: true,
     },
-  },
-  fonts: {
-    provider: 'google',
-    families: [
-      {
-        name: 'Playfair Display',
-        weights: [600, 700],
-        preload: true,
-        styles: ['normal'],
-      },
-      {
-        name: 'Manrope',
-        styles: ['normal', 'italic'],
-        weights: [400, 500, 600],
-        preload: true,
-      },
-    ],
   },
   components: [
     {

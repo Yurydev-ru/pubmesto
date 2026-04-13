@@ -1,6 +1,12 @@
 :root {
     --font-heading: "Playfair Display", serif;
-    --font-sans: "Manrope", sans-serif;
+    --font-sans: "Manrope", system-ui, sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-title: 600;
+    --fw-bold: 700;
 
     --fs-base: clamp(1rem, calc(0.97rem + 0.2vw), 1.25rem);
     --fs-h1: clamp(1.5rem, 4vw, 3rem);

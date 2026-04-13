@@ -21,12 +21,7 @@ const { getActiveClass } = useNavigation()
   display: flex;
 
   &--active {
-    color: red;
+    color: rgb(233, 200, 13);
   }
-}
-.icon {
-  width: 1.5rem;
-  height: 1.5rem;
-
 }
 </style>

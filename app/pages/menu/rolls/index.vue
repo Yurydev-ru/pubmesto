@@ -1,6 +1,6 @@
 <!-- pages/menu/rolls/index.vue -->
 <script setup lang="ts">
-import { useMenu } from '@/composables/useMenu';
+import { useMenu } from '@/composables/useMenu'
 
 const { categories } = useMenu()
 const rolls = computed(() => categories.find(c => c.slug === 'rolls'))
@@ -9,11 +9,12 @@ const rolls = computed(() => categories.find(c => c.slug === 'rolls'))
 <template>
   <div class="page-container">
     <h1>Роллы</h1>
-    <p class="subtitle">Выберите вид роллов</p>
+    <p class="subtitle">
+      Выберите вид роллов
+    </p>
 
     <div class="subcategories-grid">
       <div class="category-card">
-
         <NuxtLink
           v-for="sub in rolls?.subcategories"
           :key="sub.slug"

@@ -1,22 +1,24 @@
 <script setup lang="ts">
-import { useMenu } from '@/composables/useMenu';
+import { useMenu } from '@/composables/useMenu'
 
 const route = useRoute()
 const { getRollSubcategory } = useMenu()
 
-const subcategory = computed(() => 
-  getRollSubcategory(route.params.subcategory as string)
+const subcategory = computed(() =>
+  getRollSubcategory(route.params.subcategory as string),
 )
 </script>
 
 <template>
-  <div class="page-container" v-if="subcategory">
+  <div v-if="subcategory" class="page-container">
     <h1>{{ subcategory.title }}</h1>
-    <p class="subtitle">{{ subcategory.description }}</p>
+    <p class="subtitle">
+      {{ subcategory.description }}
+    </p>
 
     <div class="products-grid">
-      <ProductCard 
-        v-for="product in subcategory.products" 
+      <ProductCard
+        v-for="product in subcategory.products"
         :key="product.id"
         :product="product"
       />

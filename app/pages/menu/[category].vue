@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useMenu } from '@/composables/useMenu';
+import { useMenu } from '@/composables/useMenu'
 
 const route = useRoute()
 const { getCategory } = useMenu()
@@ -13,12 +13,12 @@ if (category.value?.slug === 'rolls') {
 </script>
 
 <template>
-  <div class="page-container" v-if="category">
+  <div v-if="category" class="page-container">
     <h1>{{ category.title }}</h1>
-    
+
     <div class="products-grid">
-      <ProductCard 
-        v-for="product in category.products" 
+      <ProductCard
+        v-for="product in category.products"
         :key="product.id"
         :product="product"
       />

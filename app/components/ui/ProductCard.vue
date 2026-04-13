@@ -7,16 +7,20 @@ defineProps<{
 </script>
 
 <template>
-    <div class="product-card">
+  <div class="product-card">
     <div class="product-image">
       <!-- Можно добавить реальное изображение позже -->
-      <div class="image-placeholder">{{ product.name[0] }}</div>
+      <div class="image-placeholder">
+        {{ product.name[0] }}
+      </div>
     </div>
-    
+
     <div class="product-info">
       <h3>{{ product.name }}</h3>
-      <p class="description">{{ product.description }}</p>
-      
+      <p class="description">
+        {{ product.description }}
+      </p>
+
       <div class="meta">
         <span v-if="product.weight" class="weight">{{ product.weight }}</span>
         <span class="price">{{ product.price }} ₽</span>

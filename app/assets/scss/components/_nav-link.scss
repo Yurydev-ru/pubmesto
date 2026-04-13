@@ -1,9 +1,12 @@
 .app-nav__link {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: stretch;
+  padding: var(--space-xs);
   text-align: center;
   font-size: var(--fs-2);
   font-weight: var(--fw-light);
+}
+
+.app-nav__link span {
+  font-size: 14px;
 }

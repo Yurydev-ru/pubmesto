@@ -7,9 +7,7 @@
   z-index: 10;
 
   @include media('m') {
-    p {
-      width: 100%;
-      display: block;
-    }
-  }
+      display: none;
+    
+}
 }

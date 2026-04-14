@@ -9,9 +9,9 @@
   height: calc(100dvh - 120px);
   overflow-y: auto;
   z-index: 10;
-  // @include media('m') {
-  //   display: grid;
-  // grid-template-columns: auto 1fr ;
+  @include media('m') {
+    display: grid;
+  grid-template-columns: 1fr ;
     
-  // }
+  }
 }

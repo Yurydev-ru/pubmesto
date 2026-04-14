@@ -2,7 +2,7 @@
 
 <template>
   <header class="app-header">
-    <div class="container">
+    <div class="app-header__container">
       <NuxtLink to="/" class="logo">
         <span>кафе</span>
         <h1>Место</h1>

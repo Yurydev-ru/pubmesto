@@ -10,8 +10,7 @@
   overflow: hidden;
 
   @include media('m') {
-    grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-    gap: 15;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
   }
 }

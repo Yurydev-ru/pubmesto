@@ -5,13 +5,22 @@
   backdrop-filter: blur(10px);
   box-shadow: outset 0 2px 3px var(--color-bg-primary), inset 0 -2px 2px var(--color-bg-primary);
   z-index: 10;
+  // padding-inline: 0.8rem;
+  margin-inline: auto;
+  width: 100%;
 
   @include media('m') {
     background-color: rgba(35, 35, 33, 0.145);
+    &__container {
+
+  width: 100%;
+  
+  ;
+    
   }
 }
 
-.app-header .container {
-  justify-content: center;
-  
+
 }
+
+

@@ -1,11 +1,14 @@
-.app-sidebar {
-    width: 200px;
-    height: 100dvh;
-    box-shadow: 8px 0px 10px -4px lab(3 0.21 -0.58), inset 2px 0px 10px 3px #8e978e47;
+@use '@/assets/scss/abstracts' as *;
 
-    // &__overlay {
-    //     background: red;
-    //     width: 100%;
-    //     height: 100%;
-    // }
+.nav-sidebar {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: var(--color-bg-primary);
+    box-shadow: 8px 0px 10px -4px lab(3 0.21 -0.58), inset 2px 0px 10px 3px #8e978e47;
+    display: none;
+
+    @include media('m') {
+    display: block;
+  }
 }

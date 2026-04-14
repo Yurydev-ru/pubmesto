@@ -6,22 +6,25 @@
 
     <AppHeader/>
     
-    <AppSidebar>
+    <div class="container">
+      <AppSidebar>
       <div id="aside-nav-target">
           <slot/>
         </div>
-    </AppSidebar>
+      </AppSidebar>
       
     
     <main class="app-main" role="main" aria-label="основной контент">
       <slot />
     </main>
 
-    <AppFooter>
-      <div id="footer-nav-target">
-        <slot/>
-        </div>
-    </AppFooter>
+  </div>
+  <AppFooter>
+    <div id="footer-nav-target">
+      <slot/>
+      </div>
+  </AppFooter>
+    
   </div>
 
 </template>

@@ -76,7 +76,7 @@ export default defineNuxtConfig({
     '@/': fileURLToPath(new URL('./app', import.meta.url)),
   },
   css: ['@assets/scss/main.scss'],
-  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@nuxt/icon', '@nuxt/image', '@vueuse/nuxt'],
   eslint: {
     config: {
       stylistic: true,

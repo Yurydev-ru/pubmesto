@@ -39,7 +39,7 @@ export const useNavigation = () => {
   const isLinkActive = (link: NavLink): boolean => {
     if (link.exact !== false) {
       return route.path === link.to
-    } 
+    }
     return route.path.startsWith(link.to)
   }
 

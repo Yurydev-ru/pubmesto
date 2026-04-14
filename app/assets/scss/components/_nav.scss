@@ -1,3 +1,5 @@
+@use '@/assets/scss/abstracts' as *;
+
 .app-nav {
   height: 100%;
   
@@ -6,5 +8,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include media('m') {
+    &__list {
+      grid-template-columns: 250px;
+      grid-template-rows: repeat(4 1fr);
+    }
   }
 }

@@ -2,19 +2,19 @@
 
 <template>
   <div class="bg-wrapper">
-    <NuxtImg class="bg-img" src="images/bg-m-3.jpg" sizes="sm:100vw" quality="30"/>
+    <NuxtImg class="bg-img" src="images/bg-m-3.jpg" sizes="sm:100vw" quality="30" format="webp" />
     <video
-    class="bg-video"
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="metadata"
-    aria-hidden="true"
+      class="bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-hidden="true"
     >
-    <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy">
-  </video>
-  <div class="bg-overlay"></div>
+      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy">
+    </video>
+    <div class="bg-overlay" />
   </div>
 </template>
 
@@ -53,6 +53,6 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  
+
 }
 </style>

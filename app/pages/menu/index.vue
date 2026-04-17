@@ -7,7 +7,7 @@ const { categories } = useMenu()
 
 <template>
   <section class="menu">
-    <h2>Наше меню</h2>
+    <h2>Меню</h2>
     <div class="container">
       <div class="menu-grid">
         <NuxtLink

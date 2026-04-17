@@ -17,17 +17,5 @@ const { getActiveClass } = useNavigation()
 </template>
 
 <style lang="scss" scoped>
-.app-nav__link {
-  display: flex;
-  gap: 3px;
 
-  &--active {
-    color: var(--color-active);
-    background: var(--bg-link-active);
-  }
-
-  &--hover {
-    color: var(--color-hover);
-  }
-}
 </style>

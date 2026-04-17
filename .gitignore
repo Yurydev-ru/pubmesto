@@ -8,15 +8,14 @@ dist
 
 # Node dependencies
 node_modules
-package-lock
 
 # Logs
 logs
 *.log
 npm-debug.log*
 .eslintcache
-.env
-nuxt.d.ts
+.env*.local
+
 
 # Misc
 .DS_Store

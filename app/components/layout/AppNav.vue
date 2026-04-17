@@ -8,7 +8,7 @@
       <slot name="nav">
         <NavList/>
       </slot>
-      </nav>
+    </nav>
   
 </template>
 

@@ -1,21 +1,26 @@
 @use '@/assets/scss/abstracts' as *;
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
+// .container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//   gap: 20px;
+//   align-items: center;
+//   width: 100%;
+//   max-width: 1440px;
   
    
 
-  @include media('m') {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    padding: var(--space-s);
-    gap: var(--space-s);
-  }
+//   @include media('m') {
+//     display: grid;
+//     grid-template-columns: 250px 1fr;
+//     padding: var(--space-s);
+//     gap: var(--space-s);
+//   }
+// }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: var(--space-md);
 }
-
-

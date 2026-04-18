@@ -2,8 +2,12 @@
 
 .app-nav {
   height: 100%;
-  
 
+  @include media('m') {
+    display: flex;
+  flex: 1;
+  padding: 16px;
+  }
   
   &__list {
     width: 100%;
@@ -13,13 +17,17 @@
 
   @include media('m') {
     &__list {
-      height: 100%;
+      // height: 100%;
       grid-template-columns: auto;
-      grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
       gap: 1rem;
   //     background-color: var(--bg-gradient-overlay), 
-  // hsla(0, 16%, 84%, 90);
-      
-    }
+  // hsla(0, 16%, 84%, 90);   
+}
+&__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   }
 }

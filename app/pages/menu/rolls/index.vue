@@ -7,6 +7,14 @@ const rolls = computed(() => categories.find(c => c.slug === 'rolls'))
 </script>
 
 <template>
+  <section class="menu">
+    <h2>Меню</h2>
+    <div class="menu__container">
+      <div class="menu__grid">
+          <MenuCard/>
+      </div>
+    </div>
+  </section>
   <div class="page-container">
     <h1>Роллы</h1>
     <p class="subtitle">

@@ -55,6 +55,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     compressPublicAssets: true,
+    minify: true
   },
   alias: {
     '@': fileURLToPath(new URL('./app', import.meta.url)),

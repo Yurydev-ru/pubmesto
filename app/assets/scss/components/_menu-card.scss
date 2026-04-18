@@ -14,8 +14,7 @@
 
 .menu__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  // padding-inline: var(--space-s);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: var(--space-s);
 }
 

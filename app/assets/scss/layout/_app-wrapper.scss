@@ -3,7 +3,7 @@
 .app-wrapper {
   position: relative;
  display: grid;
-  grid-template-rows: 65px 1fr 65px;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   width: 100%;
   height: 100dvh;
@@ -12,5 +12,17 @@
   @include media('m') {
     grid-template-columns: 1fr;
     grid-template-rows: 70px 1fr;
+  }
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include media('m') {
+    grid-template-columns: 240px 1fr;
+    // grid-template-rows: 1fr;
+    // gap: 1rem;
+    padding: 1rem;
   }
 }

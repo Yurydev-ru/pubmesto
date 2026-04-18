@@ -1,16 +1,15 @@
 @use '@/assets/scss/abstracts' as *;
 
 .app-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  will-change: transform;
   width: 100%;
-  height: calc(100dvh - 120px);
+  // height: calc(100dvh - 120px);
   overflow-y: auto;
   z-index: 10;
+
   @include media('m') {
     display: grid;
   grid-template-columns: 1fr ;
-    
+  grid-template-rows: 1fr;
   }
 }

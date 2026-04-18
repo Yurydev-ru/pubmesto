@@ -6,7 +6,7 @@
 
     <AppHeader/>
     
-    <div class="container">
+    <div class="app-body">
       <AppSidebar>
       <div id="aside-nav-target">
           <slot/>

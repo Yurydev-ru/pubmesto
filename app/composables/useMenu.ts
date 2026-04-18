@@ -22,6 +22,7 @@ export interface MenuCategory {
   description?: string
   subcategories?: MenuSubcategory[]
   products?: MenuProduct[]
+  image?: string
 }
 
 export function useMenu() {
@@ -29,6 +30,7 @@ export function useMenu() {
     {
       slug: 'rolls',
       title: 'Роллы',
+      image: 'images/menu/photo_2026-04-17_23-53-21.jpg',
       icon: 'streamline:freehand-sushi-roll',
       description: 'Свежие и жареные роллы',
       subcategories: [
@@ -74,6 +76,7 @@ export function useMenu() {
       slug: 'meat',
       title: 'Мясо',
       icon: 'streamline:freehand-meat',
+      image: 'images/menu/photo_2026-04-17_23-53-25.jpg',
       products: [
         { id: 101, name: 'Стейк рибай', price: 890, weight: '300г', description: 'Говядина премиум' },
         { id: 102, name: 'Курица терияки', price: 520, weight: '250г', description: 'Куриное филе в соусе терияки' },
@@ -82,6 +85,7 @@ export function useMenu() {
     {
       slug: 'fastfood',
       title: 'Фастфуд',
+      image: 'images/menu/photo_2026-04-17_23-53-31.jpg',
       icon: 'streamline:freehand-burger',
       products: [
         { id: 201, name: 'Чизбургер', price: 320, weight: '180г', description: 'Классический бургер' },
@@ -92,6 +96,7 @@ export function useMenu() {
       slug: 'drinks',
       title: 'Напитки',
       icon: 'streamline:freehand-drink',
+      image: 'images/menu/photo_2026-04-17_23-53-33.jpg',
       products: [
         { id: 301, name: 'Кола', price: 120, weight: '0.5л', description: 'Классическая кола' },
         { id: 302, name: 'Зелёный чай', price: 90, weight: '0.4л', description: 'Свежезаваренный чай' },

@@ -20,10 +20,12 @@
 
 <style lang="scss" scoped>
 .bg-overlay {
-  background: #1b1a1a09;
+  background: hsl(191.55deg 2.62% 20.09% / 5%);
+  // background-color: var(--bg-gradient-overlay), 
+  // hsla(0, 16%, 84%, 90);
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5.6px);
 }
 .bg-wrapper {
   position: absolute;

@@ -11,4 +11,37 @@
 
   --color-border-primary: rgb(51, 51, 48);
   --color-border-hover: rgb(78, 76, 71);
+
+  --color-gradient-start: rgba(0,0,0,0.6);
+  --color-gradient-end: rgba(0,0,0,0.2);
+
+  
+
+  --color-gradient-primary: linear-gradient(
+    135deg,
+    #ff3c3c,
+    #ff8c42
+  );
+
+  --bg-gradient-overlay: linear-gradient(
+    151.4deg,
+    rgba(13,13,15,0.5) / 19.06%,
+    rgba(2, 2, 24, 0.2) / 94.42%;
+    )
+
+  --color-gradient-light: linear-gradient(
+    to bottom,
+    #303333de,
+    #bbbdc91b
+  );
+
+  --overlay-h: 70;
+  --overlay-s: -12%;
+  --overlay-l: 12%;
+
+  --color-bg-overlay: linear-gradient(
+    to top, 
+    hsla(var(--overlay-h), var(--overlay-s), var(--overlay-l), 0.8),
+    hsla(var(--overlay-h), var(--overlay-s), var(--overlay-l), 0.1) 
+  );
 }

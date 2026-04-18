@@ -12,7 +12,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  src: url('@assets/fonts/manrope-400.woff2') format('woff2'),
+  src: url('@assets/fonts/manrope-400.woff2') format('woff2')
 }
 
 @font-face {
@@ -48,11 +48,17 @@ body {
 }
 
 h1 {
-  font-weight: var(--fw-title);
-  line-height: var(--ls-tight);
+  font-size: var(--fs-h1);
 }
 
 h2 {
-  font-family: var(--font-heading);
   font-size: var(--fs-h2);
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-title);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-tight);
 }

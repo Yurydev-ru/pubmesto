@@ -4,6 +4,7 @@
   height: 100%;
   
 
+  
   &__list {
     width: 100%;
     display: grid;
@@ -14,8 +15,10 @@
     &__list {
       height: 100%;
       grid-template-columns: auto;
-      grid-template-rows: repeat(4 1fr);
-      background: var(--color-bg-primary);
+      grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+  //     background-color: var(--bg-gradient-overlay), 
+  // hsla(0, 16%, 84%, 90);
       
     }
   }

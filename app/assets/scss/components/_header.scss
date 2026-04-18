@@ -1,9 +1,9 @@
 @use '@/assets/scss/abstracts' as *;
 
 .app-header {
-  background-color: var(--color-bg-surface);
-  backdrop-filter: blur(10px);
-  box-shadow: outset 0 2px 3px var(--color-bg-primary), inset 0 -2px 2px var(--color-bg-primary);
+  background: hsla(255, 19%, 92%, 0.06);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 5px 20px -2px hsla(0, 0%, 0%, 0.929), inset 3px -4px 16px -7px hsla(252, 6%, 83%, 0.326);
   z-index: 10;
   // padding-inline: 0.8rem;
   margin-inline: auto;

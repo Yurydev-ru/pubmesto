@@ -1,29 +1,4 @@
-export interface MenuProduct {
-  id: number
-  name: string
-  price: number
-  weight?: string
-  description: string
-  image?: string
-  ingredients?: string[]
-}
-
-export interface MenuSubcategory {
-  slug: string
-  title: string
-  description: string
-  products: MenuProduct[]
-}
-
-export interface MenuCategory {
-  slug: string
-  title: string
-  icon: string
-  description?: string
-  subcategories?: MenuSubcategory[]
-  products?: MenuProduct[]
-  image?: string
-}
+import type { MenuCategory, MenuSubcategory } from "@/types/menu"
 
 export function useMenu() {
   const categories: MenuCategory[] = [
@@ -31,17 +6,36 @@ export function useMenu() {
       slug: 'rolls',
       title: 'Роллы',
       image: 'images/menu/photo_2026-04-17_23-53-21.jpg',
-      icon: 'streamline:freehand-sushi-roll',
-      description: 'Свежие и жареные роллы',
       subcategories: [
         {
           slug: 'cold',
           title: 'Холодные роллы',
           description: 'Холодные роллы на любой вкус',
           products: [
-            { id: 1, name: 'Филадельфия', price: 450, weight: '220г', description: 'Лосось, сливочный сыр, огурец', ingredients: ['Лосось', 'Сливочный сыр', 'Огурец'] },
-            { id: 2, name: 'Калифорния', price: 390, weight: '210г', description: 'Крабовый мясо, авокадо, огурец' },
-            { id: 3, name: 'Аляска', price: 420, weight: '230г', description: 'Лосось, авокадо, огурец' },
+            {
+              id: 1,
+              name: 'Филадельфия',
+              price: 450,
+              weight: '220г',
+              description: 'Лосось, сливочный сыр, огурец',
+              ingredients: ['Лосось', 'Сливочный сыр', 'Огурец']
+            },
+            {
+              id: 2,
+              name: 'Калифорния',
+              price: 390,
+              weight: '210г',
+              description: 'Крабовый мясо, авокадо, огурец',
+              ingredients: ['Лосось', 'Сливочный сыр', 'Огурец']
+            },
+            {
+              id: 3,
+              name: 'Аляска',
+              price: 420,
+              weight: '230г',
+              description: 'Лосось, авокадо, огурец',
+              ingredients: ['Лосось', 'Сливочный сыр', 'Огурец']
+            },
           ],
         },
         {
@@ -75,7 +69,6 @@ export function useMenu() {
     {
       slug: 'meat',
       title: 'Мясо',
-      icon: 'streamline:freehand-meat',
       image: 'images/menu/photo_2026-04-17_23-53-25.jpg',
       products: [
         { id: 101, name: 'Стейк рибай', price: 890, weight: '300г', description: 'Говядина премиум' },
@@ -86,7 +79,6 @@ export function useMenu() {
       slug: 'fastfood',
       title: 'Фастфуд',
       image: 'images/menu/photo_2026-04-17_23-53-31.jpg',
-      icon: 'streamline:freehand-burger',
       products: [
         { id: 201, name: 'Чизбургер', price: 320, weight: '180г', description: 'Классический бургер' },
         { id: 202, name: 'Картошка фри', price: 180, weight: '150г', description: 'Хрустящий картофель' },
@@ -95,7 +87,6 @@ export function useMenu() {
     {
       slug: 'drinks',
       title: 'Напитки',
-      icon: 'streamline:freehand-drink',
       image: 'images/menu/photo_2026-04-17_23-53-33.jpg',
       products: [
         { id: 301, name: 'Кола', price: 120, weight: '0.5л', description: 'Классическая кола' },
@@ -104,17 +95,17 @@ export function useMenu() {
     },
   ]
 
-  const getCategory = (slug: string) => categories.find(c => c.slug === slug)
+  const getCategory = (slug: string): MenuCategory | undefined =>
+    categories.find(c => c.slug === slug)
 
-  // Получить подкатегорию роллов
-  const getRollSubcategory = (subSlug: string) => {
-    const rolls = categories.find(c => c.slug === 'rolls')
-    return rolls?.subcategories?.find(s => s.slug === subSlug)
+  const getSubcategory = (categorySlug: string, subSlug: string): MenuSubcategory | undefined => {
+    const category = getCategory(categorySlug)
+    return category?.subcategories?.find(s => s.slug === subSlug)
   }
 
   return {
     categories,
     getCategory,
-    getRollSubcategory,
+    getSubcategory,
   }
 }

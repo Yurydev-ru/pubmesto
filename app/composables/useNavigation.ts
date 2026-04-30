@@ -25,7 +25,6 @@ export const useNavigation = () => {
       label: 'О нас',
       ariaLabel: 'О нас',
       exact: true,
-
     },
     {
       to: '/contact',
